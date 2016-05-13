@@ -1,0 +1,176 @@
+/*
+Theme Name: Carlozahar
+Author: Kyle Steinle
+Author URI: http://www.knwebwork.com
+Description: A Theme For Ruthlessly Overthrowing Roleplay Forum Competition
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/***************FONTS****************/
+@font-face {
+  font-family: 'Trajan-Reg';
+  src: url("assets/fonts/TrajanProRegular.ttf"); }
+/***************VARIABLES************/
+/***************MIXINS***************/
+/**************GLOBAL***************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+body {
+  line-height: 1;
+  color: #fff;
+  background: white;
+  font-family: sans-serif; }
+
+ol, ul {
+  list-style: none; }
+
+a, a:link, a:visited, a:active {
+  text-decoration: none; }
+
+.hidden {
+  display: none; }
+
+/****Clearfix****/
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1; }
+
+#page-container {
+  background-color: #3d6a99;
+  /* FOR DEMO PURPOSES */
+  padding-top: 5px; }
+
+#front-main {
+  background-color: #2b568a;
+  /* FOR DEMO PURPOSES */
+  width: 97%;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 5px; }
+
+#f-left-col, #f-right-col,
+#f-center-col {
+  min-height: 95vh;
+  /* FOR DEMO PURPOSES */
+  float: left;
+  text-align: center;
+  /* FOR DEMO PURPOSES */
+  margin-right: 1%; }
+
+#f-left-col, #f-right-col {
+  width: 16.5%; }
+
+#f-left-col {
+  margin-left: 1%; }
+
+#f-center-col {
+  width: 63%; }
+
+#f-right-col {
+  margin-right: 0; }
+
+.c-box {
+  min-height: 100px;
+  /* FOR DEMO PURPOSES */
+  color: #eee;
+  /* FOR DEMO PURPOSES */
+  margin-top: 17px;
+  border: 2px solid #1f4068;
+  border-radius: 5px;
+  overflow: hidden; }
+  .c-box .box-header {
+    font-family: 'Trajan-Reg', serif;
+    background-color: #1f4068;
+    /* FOR DEMO PURPOSES */
+    min-height: 25px;
+    /* FOR DEMO PURPOSES */ }
+    .c-box .box-header:after {
+      /* FOR DEMO PURPOSES */
+      content: "Box Header"; }
+  .c-box .box-content {
+    background-color: #3d6a99;
+    /* FOR DEMO PURPOSES */
+    min-height: 110px;
+    /* FOR DEMO PURPOSES */ }
+    .c-box .box-content:after {
+      /* FOR DEMO PURPOSES */
+      content: "Box Content"; }
+  .c-box .dif-height1 {
+    /* FOR DEMO PURPOSES */
+    min-height: 150px; }
+  .c-box .dif-height2 {
+    /* FOR DEMO PURPOSES */
+    min-height: 210px; }
+
+#front-header {
+  min-height: 20vh;
+  /* FOR DEMO PURPOSES */
+  background-color: #2b568a;
+  /* FOR DEMO PURPOSES */
+  text-align: center;
+  /* FOR DEMO PURPOSES */
+  padding-bottom: 20px; }
+
+#front-nav, #site-banner {
+  width: 80%;
+  margin: 0 auto; }
+
+#front-nav {
+  min-height: 5vh;
+  /* FOR DEMO PURPOSES */
+  background-color: #1f4068;
+  /* FOR DEMO PURPOSES */ }
+
+#site-banner {
+  min-height: 35vh;
+  /* FOR DEMO PURPOSES */
+  background-color: #3d6a99;
+  /* FOR DEMO PURPOSES */ }
+  #site-banner #site-header {
+    font-size: 60px;
+    /* FOR DEMO PURPOSES */
+    padding-top: 50px;
+    /* FOR DEMO PURPOSES */
+    font-family: 'Trajan-Reg', serif; }
+
+.menu {
+  float: right; }
+  .menu a, .menu a:link, .menu a:visited, .menu a:hover {
+    color: #fff;
+    text-decoration: none; }
+  .menu a:hover {
+    color: #ccc;
+    transition: all .5s; }
+
+.menu-item {
+  float: left; }
+  .menu-item:after {
+    content: " | "; }
+
+/*@import 'blog';
+@import 'single';*/
+
+/*# sourceMappingURL=style.css.map */

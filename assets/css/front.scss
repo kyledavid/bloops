@@ -1,0 +1,72 @@
+
+
+#page-container {
+	background-color: $valLightBlue; /* FOR DEMO PURPOSES */
+	padding-top: 5px;
+}
+
+#front-main {
+	background-color: $valMainBlue; /* FOR DEMO PURPOSES */
+	width: 97%;
+	margin: 0 auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#f-left-col, #f-right-col,
+#f-center-col {
+	min-height: 95vh; /* FOR DEMO PURPOSES */
+	float: left;
+	text-align: center; /* FOR DEMO PURPOSES */
+	margin-right: 1%;
+}
+
+#f-left-col, #f-right-col {
+	width: 16.5%;
+}
+
+#f-left-col {
+	margin-left: 1%;
+}
+
+#f-center-col {
+	width: 63%;
+}
+
+#f-right-col {
+	margin-right: 0;
+}
+
+.c-box {
+	min-height: 100px; /* FOR DEMO PURPOSES */
+	color: #eee; /* FOR DEMO PURPOSES */
+	margin-top: 17px;
+	border: 2px solid $valDarkBlue;
+	border-radius: 5px;
+	overflow: hidden;
+	.box-header {
+		@include valTitle;
+		background-color: $valDarkBlue; /* FOR DEMO PURPOSES */
+		min-height: 25px; /* FOR DEMO PURPOSES */
+		&:after { /* FOR DEMO PURPOSES */
+			content: "Box Header";
+		}
+	}
+
+	.box-content {
+		background-color: $valLightBlue; /* FOR DEMO PURPOSES */
+		&:after { /* FOR DEMO PURPOSES */
+			content: "Box Content";
+		}
+		min-height: 110px; /* FOR DEMO PURPOSES */
+	}
+
+	.dif-height1 { /* FOR DEMO PURPOSES */
+		min-height: 150px;
+	}
+
+	.dif-height2 { /* FOR DEMO PURPOSES */
+		min-height: 210px; 
+	}
+}
+

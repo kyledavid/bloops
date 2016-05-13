@@ -1,0 +1,49 @@
+#front-header {
+	min-height: 20vh; /* FOR DEMO PURPOSES */
+	background-color: $valMainBlue; /* FOR DEMO PURPOSES */
+	text-align: center; /* FOR DEMO PURPOSES */
+	padding-bottom: 20px;
+}
+
+#front-nav, #site-banner {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#front-nav {
+	min-height: 5vh; /* FOR DEMO PURPOSES */
+	background-color: $valDarkBlue; /* FOR DEMO PURPOSES */
+}
+
+#site-banner {
+	min-height: 35vh; /* FOR DEMO PURPOSES */
+	background-color: $valLightBlue; /* FOR DEMO PURPOSES */
+
+	#site-header {
+		font-size: 60px; /* FOR DEMO PURPOSES */
+		padding-top: 50px; /* FOR DEMO PURPOSES */
+		@include valTitle;
+	}
+}
+
+.menu {
+	float: right;
+
+	a, a:link, a:visited, a:hover {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #ccc;
+		transition: all .5s;
+	}
+}
+
+.menu-item {
+	float: left;
+
+	&:after {
+		content: " | ";
+	}
+}

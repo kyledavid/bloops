@@ -1,0 +1,86 @@
+/*
+Theme Name: Carlozahar
+Author: Kyle Steinle
+Author URI: http://www.knwebwork.com
+Description: A Theme For Ruthlessly Overthrowing Roleplay Forum Competition
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/***************FONTS****************/
+
+@font-face {
+   font-family: 'Trajan-Reg'; 
+   src: url('assets/fonts/TrajanProRegular.ttf');
+} 
+
+
+/***************VARIABLES************/
+
+$valDarkBlue: #1f4068;
+$valMainBlue: #2b568a;
+$valLightBlue: #3d6a99;
+
+
+/***************MIXINS***************/
+
+@mixin valTitle {
+	font-family: 'Trajan-Reg', serif;
+}
+
+@mixin valBody {
+	font-family: sans-serif;
+}
+
+/**************GLOBAL***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+	color: #fff;
+	background: white;
+	@include valBody;
+}
+ol, ul {
+	list-style: none;
+}
+a, a:link, a:visited, a:active{
+	text-decoration: none;
+}
+
+
+
+
+.hidden{
+	display: none;
+}
+
+/****Clearfix****/
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+
+@import 'front';
+@import 'nav';
+/*@import 'blog';
+@import 'single';*/
