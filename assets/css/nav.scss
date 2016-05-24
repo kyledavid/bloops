@@ -5,6 +5,10 @@
 	padding-bottom: 20px;
 }
 
+#header {
+	background-color: #55728b;
+}
+
 #front-nav, #site-banner {
 	width: 80%;
 	margin: 0 auto;
@@ -23,27 +27,5 @@
 		font-size: 60px; /* FOR DEMO PURPOSES */
 		padding-top: 50px; /* FOR DEMO PURPOSES */
 		@include valTitle;
-	}
-}
-
-.menu {
-	float: right;
-
-	a, a:link, a:visited, a:hover {
-		color: #fff;
-		text-decoration: none;
-	}
-
-	a:hover {
-		color: #ccc;
-		transition: all .5s;
-	}
-}
-
-.menu-item {
-	float: left;
-
-	&:after {
-		content: " | ";
 	}
 }

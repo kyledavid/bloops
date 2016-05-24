@@ -46,19 +46,39 @@
 	overflow: hidden;
 	.box-header {
 		@include valTitle;
+		padding: 10px 10px;
 		background-color: $valDarkBlue; /* FOR DEMO PURPOSES */
 		min-height: 25px; /* FOR DEMO PURPOSES */
-		&:after { /* FOR DEMO PURPOSES */
-			content: "Box Header";
+		background: url('http://www.valucre.com/uploads/set_resources_7/005d20f304c7929cbfdb3fe61d088022_mainPattern.png') 
+		repeat 50% 100%, linear-gradient(to bottom, rgba(20,60,105,0.5) 0%, rgba(20,60,100,1) 100%);
+		h2 {
+			font-size: 2em;
 		}
 	}
 
 	.box-content {
+		position: relative;
 		background-color: $valLightBlue; /* FOR DEMO PURPOSES */
-		&:after { /* FOR DEMO PURPOSES */
-			content: "Box Content";
-		}
+		padding: 25px 55px;
+		text-align: left;
+		font-size: 1.1em;
 		min-height: 110px; /* FOR DEMO PURPOSES */
+		h2 {
+			font-size: 1.2em;
+			font-weight: bold;
+			font-style: italic;
+		}
+	}
+
+	.lore {
+		padding: 8px;
+		text-align: center;
+		a, a:link, a:visited {
+			color: #fff;
+		}
+		p {
+			font-size: .9em;
+		}
 	}
 
 	.dif-height1 { /* FOR DEMO PURPOSES */
@@ -70,3 +90,19 @@
 	}
 }
 
+#front-banner {
+	margin-top: 15px;
+	text-align: center;
+	img {
+		width: 50%;
+		display: inline-block;
+		height: 175px;
+	}
+}
+
+
+
+.lore-img {
+	width: 90%;
+	
+}
