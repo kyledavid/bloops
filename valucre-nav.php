@@ -53,7 +53,7 @@
     
 	
 	<li>
-		<a data-action="defaultStream" class="ipsType_light" href="http://www.valucre.com/discover/"><i class="icon-newspaper"></i></a>
+		<a data-action="defaultStream" class="ipsType_light" href="http://www.valucre.com/discover/"><i class="fa fa-newspaper-o"></i></a>
 	</li>
 	
 		<li class="ipsJS_show">
