@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
 <head>
-	<script src=
+	<link rel='stylesheet' type='text/css' href='<?php bloginfo('template_url');?>/assets/css/ips.css'/>
 	<?php get_template_part('valucre-nav-head'); ?>
 	
 

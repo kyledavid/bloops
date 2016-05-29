@@ -1,8 +1,8 @@
 <?php
 
 function carlozaharStyleResources(){
-	wp_enqueue_script( 'ips-scripts', get_stylesheet_directory_uri() . '/assets/js/ips.js', array(), null, true );
 	wp_enqueue_script( 'slicknav-script', get_stylesheet_directory_uri() . '/assets/js/slicknav.js', array(), null, true );
+	wp_enqueue_script( 'ips-scripts', get_stylesheet_directory_uri() . '/assets/js/ips.js', array(), null, true );
 	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 	wp_enqueue_style('style', get_stylesheet_uri(), array(), '1.0.0');
 }

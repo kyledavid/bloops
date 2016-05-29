@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
 			if (chileItem.length){
 				event.preventDefault();
 				if (chileItem.css('display') === 'none') {
-					chileItem.animate({height: 'toggle'}, 500, 'easeOutBounce' );
+					chileItem.animate({height: 'toggle'}, 500 );
 				} else {
 					chileItem.animate({height: 'toggle'}, 200);
 				}

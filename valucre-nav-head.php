@@ -77,6 +77,7 @@
 
 -->
 
+
 		
 		<style id="stylePrimary" type="text/css">.tee, .tee #header, .tee .ipsBreadcrumb, .tee #footer, .tee.ipsApp .ipsButton_important, .tee .ipsButtonBar, .tee .cPollVoteBar > span, .tee .focus_footer{ background-color: #55728b }.tee .ipsBreadcrumb a, .tee .breadcrumb_side li a, .tee .breadcrumb_side li a:hover{ color: #55728b } </style>
 <style id="styleSecondary" type="text/css">.tee .ipsType_sectionTitle, .tee .ipsWidget.ipsWidget_vertical .ipsWidget_title, .tee .ipsWidget.ipsWidget_horizontal .ipsWidget_title, .tee #elVNC_sidebar .ipsFieldRow_label, .tee #elSearch_sidebar .ipsFieldRow_label, .tee .ipsTable.ipsMatrix .ipsMatrix_subHeader, .tee .ipsSideMenu_title, .tee .ipsSideMenu_subTitle , .tee .ipsItemStatus.ipsItemStatus_large, .tee .ipsItemStatus.ipsItemStatus_large.ipsItemStatus_read{ background-color: #8b4343 }a, .tee .ipsWidget.ipsWidget_vertical .ipsWidget_title, .tee .ipsWidget.ipsWidget_horizontal .ipsWidget_title, .tee #elVNC_sidebar .ipsFieldRow_label, .tee #elSearch_sidebar .ipsFieldRow_label, .tee .ipsTable.ipsMatrix .ipsMatrix_subHeader, .tee .ipsSideMenu_title, .tee .ipsSideMenu_subTitle{ color: #8b4343 } @media screen and (min-width:768px){  .tee .cPost:before{ background-color: #8b4343 } .tee .cAuthorPane_author, .tee .cAuthorPane_author a, .tee .cPost .ipsComment_meta{ color: #8b4343 }  }</style>
@@ -111,25 +112,8 @@
 
 
 
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/root_library.js.b442f31bd9e36154e765d573cbb57720.js" data-ips=""></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/assets/js/ips.js" data-ips=""></script>
 
-
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/root_js_lang_1.js.e09cd649df3c05339b28e941a151f887.js" data-ips=""></script>
-
-
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/root_framework.js.f446b4d3065f8e982956e54a6f51625d.js" data-ips=""></script>
-
-
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/global_global_core.js.bf1467687fb3882e43bc9d3c11ccf210.js" data-ips=""></script>
-
-
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/root_front.js.63476d30659ee0cefb2f421d05764845.js" data-ips=""></script>
-
-
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/front_front_forum.js.0ff008383bb39fc428ca2024c62ab5be.js" data-ips=""></script>
-
-
-<script type="text/javascript" src="./Fantasy roleplay forum  cutout_files/root_map.js.2ffa470b229936b6e06881ada5f4d78d.js" data-ips=""></script>
 
 
 
