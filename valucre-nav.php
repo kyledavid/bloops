@@ -486,8 +486,8 @@
 
 	<ul id="elUserNav" class="ipsList_inline cSignedOut ipsClearfix ipsResponsive_showDesktop">
 		<li id="elSignInLink">
-			<a href="https://www.valucre.com/login/" data-ipsmenu-closeonclick="false" data-ipsmenu="" id="elUserSignIn">
-				Existing user? Sign In &nbsp;<i class="fa fa-caret-down"></i>
+			<a href="https://www.valucre.com/">
+				Forum</i>
 			</a>
 			
 <div id="elUserSignIn_menu" class="ipsMenu ipsMenu_auto ipsHide">
@@ -597,12 +597,6 @@
 				</a>
 			</li>
 		
-		
-      	<li class="cUserNav_icon" id="toggle_themeEditor">
-            <a href="http://www.valucre.com/#" data-ipstooltip="" _title="Theme Editor">
-                <i class="fa fa-paint-brush"></i>
-            </a>
-        </li>
 	</ul>
 
                 	

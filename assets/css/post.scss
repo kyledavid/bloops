@@ -1,0 +1,68 @@
+#post-main {
+
+	#slick-column {
+		width: 19%;
+		float: left;
+		margin: 0 15px;
+	}
+
+	#single-post {
+		width: 71%;
+		float:left;
+		margin: 0;
+	}
+	.post-info {
+		font-size: 12px;
+		margin: 10px 0;
+	}
+
+	.post-thumbnail {
+		text-align: center;
+		img {
+			max-width: 100%;
+		}
+	}
+	.post-content {
+		margin-top: 10px;
+	}
+	.post {
+		min-height: 75vh;
+		margin: 10px 15%;
+	    background-color: #fff;
+	    padding: 20px;
+	    color: rgb(102, 102, 102);
+	    border-radius: 10px;
+
+	    font-family: Tahoma, sans-serif;
+	    font-size: 13px;
+	    .by-line{
+	    	font: {
+	    		size: 16px;
+	    		family: Tahoma, sans-serif;
+	    	}
+	    }
+
+	    p {
+	    	font: {
+	    		size: 13px;
+	    		family: Tahoma, sans-serif;
+	    	}
+	    }
+
+	    .post-title {
+	    	font: {
+	    		size: 22px;
+	    		family: Tahoma, sans-serif;
+	    	}
+	    	padding: 12px 0;
+	    	color: rgb(102, 102, 102);
+	    }
+
+		h2 {
+			font: {
+				size: 36px;
+				family: 'Trajan-Reg', serif;
+			}
+		}
+	}
+}

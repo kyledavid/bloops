@@ -1,0 +1,16 @@
+h2.screen-reader-text {
+	display: none;
+}
+
+div.nav-links {
+	font-family: sans-serif;
+	margin-top: 10px;
+	font-size: 17px;
+	a, a:link, a:visited, a:active {
+		color: #fff;
+	}
+
+	a:hover {
+		color: rgba(255,255,255, .7);
+	}
+}

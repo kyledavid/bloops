@@ -1,0 +1,46 @@
+@media (max-width: 1400px) {
+	#vertical-slick {
+		display: block;
+	}
+
+	#slick-column {
+		display: none;
+	}
+
+	#post-main #single-post {
+		float: none;
+		width: 97%;
+		margin: 15px auto;
+
+	}
+
+	#page-container {
+		padding-top: 34px;
+	}
+
+	#f-left-col {
+		display: none;
+	}
+
+	#f-center-col {
+		width: 70%;
+	}
+
+	#f-right-col {
+		width: 29%;
+	}
+}
+
+@media (max-width: 1200px) {
+	#right-boxes {
+		display: block;
+	}
+
+	#f-left-col, #f-right-col {
+		display: none;
+	}
+
+	#f-center-col {
+	width: 98%;
+	}
+}

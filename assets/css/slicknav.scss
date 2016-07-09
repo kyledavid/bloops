@@ -1,5 +1,22 @@
+#vertical-slick {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	display: none;
+	.slicknav {
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.menu-main-menu-container {
+		display: none;
+		z-index: 20;
+	}
+}
+
 .slicknav {
-	margin-top: 55px;
+	margin-top: 18px;
 	text-align: left;
 	.slick-head, li {
 		width: 100%;
@@ -11,7 +28,7 @@
 
 
 	.menu {
-		float: right;
+		
 		z-index: 1;
 		a, a:link, a:visited, a:hover {
 			color: #fff;
@@ -51,5 +68,22 @@
 		.menu-item:last-of-type {
 			padding-bottom: 0px;
 		}
+	}
+}
+
+nav.slicknav ul.menu > li.menu-item:first-of-type {
+
+	@include valTitle;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	pointer-events: none;
+    cursor: default;
+	padding: 10px 10px;
+	background-color: $valDarkBlue; /* FOR DEMO PURPOSES */
+	min-height: 25px; /* FOR DEMO PURPOSES */
+	background: url('http://www.valucre.com/uploads/set_resources_7/005d20f304c7929cbfdb3fe61d088022_mainPattern.png') 
+	repeat 50% 100%, linear-gradient(to bottom, rgba(20,60,105,0.5) 0%, rgba(20,60,100,1) 100%);
+	h2 {
+		font-size: 2em;
 	}
 }

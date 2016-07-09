@@ -1,8 +1,12 @@
 
+#right-boxes {
+	display: none;
+}
 
 #page-container {
 	background-color: $valLightBlue; /* FOR DEMO PURPOSES */
-	padding-top: 5px;
+	padding: 5px 0;
+	position: relative;
 }
 
 #front-main {
@@ -11,6 +15,7 @@
 	margin: 0 auto;
 	padding: 5px;
 	border-radius: 5px;
+	padding-bottom: 10px;
 }
 
 #f-left-col, #f-right-col,
@@ -44,6 +49,14 @@
 	border: 2px solid $valDarkBlue;
 	border-radius: 5px;
 	overflow: hidden;
+
+	a, a:link, a:visited {
+		color: #eee;
+	}
+
+	a:hover {
+		color: rgba(150, 150, 150, .7);
+	}
 	.box-header {
 		@include valTitle;
 		padding: 10px 10px;
@@ -70,7 +83,7 @@
 		}
 	}
 
-	.lore {
+	.lore, .r-content {
 		padding: 8px;
 		text-align: center;
 		a, a:link, a:visited {
@@ -78,6 +91,10 @@
 		}
 		p {
 			font-size: .9em;
+		}
+
+		img {
+			width: 90%;
 		}
 	}
 
@@ -98,11 +115,4 @@
 		display: inline-block;
 		height: 175px;
 	}
-}
-
-
-
-.lore-img {
-	width: 90%;
-	
 }
