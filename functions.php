@@ -22,7 +22,7 @@ function carlozaharSetup(){
 
 add_action('after_setup_theme', 'carlozaharSetup');
 add_action('wp_enqueue_scripts', 'carlozaharStyleResources');
-add_filter('show_admin_bar', '__return_false');
+// add_filter('show_admin_bar', '__return_false');
 
 // Customize Appearance Options
 function carlozahar_customize_register( $wp_customize ) {
@@ -58,13 +58,38 @@ function carlozahar_customize_register( $wp_customize ) {
 		'transport' => 'refresh',
 		));
 
+	$wp_customize->add_setting('carl_slicknav_text_color', array(
+		'default' => '#eee',
+		'transport' => 'refresh',
+		));
+
 	$wp_customize->add_setting('carl_slicknav_bg', array(
-		'default' => '#1f4068',
+		'default' => '#eee',
 		'transport' => 'refresh',
 		));
 
 	$wp_customize->add_setting('carl_slicknav_border', array(
 		'default' => '#000',
+		'transport' => 'refresh',
+		));
+
+	$wp_customize->add_setting('carl_slicknav_text_size', array(
+		'default' => 22,
+		'transport' => 'refresh',
+		));
+
+	$wp_customize->add_setting('carl_post_bg', array(
+		'default' => '#fff',
+		'transport' => 'refresh',
+		));
+
+	$wp_customize->add_setting('carl_post_color', array(
+		'default' => '#333',
+		'transport' => 'refresh',
+		));
+
+	$wp_customize->add_setting('carl_post_fsize', array(
+		'default' => '16',
 		'transport' => 'refresh',
 		));
 
@@ -75,6 +100,11 @@ function carlozahar_customize_register( $wp_customize ) {
 
 	$wp_customize->add_section('carloz_slicknav_colors', array(
 		'title' => __('Carlozahar Slicknav', 'Carlozahar'),
+		'priority' => 30,
+		));
+
+	$wp_customize->add_section('carloz_single_post', array(
+		'title' => __('Carlozahar Single Post Styles', 'Carlozahar'),
 		'priority' => 30,
 		));
 
@@ -114,16 +144,61 @@ function carlozahar_customize_register( $wp_customize ) {
 		'settings' => 'carl_text_color',
 		)));
 
+
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'carloz_slicknav_bg_control', array(
 		'label' => __('Slicknav Background', 'Carlozahar'),
 		'section' => 'carloz_slicknav_colors',
 		'settings' => 'carl_slicknav_bg',
 		)));
 
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'carloz_slicknav_fontsize_control', array(
+            'label'          => __( 'Font size for Slicknav', 'Carlozahar' ),
+            'section'        => 'carloz_slicknav_colors',
+            'settings'       => 'carl_slicknav_text_size',
+            'type'           => 'number',
+            'input_attrs'    => array(
+                'min'        => 1,
+                'max'        => 99,
+            ),
+        )
+    )
+);
+
+	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'carloz_single_fsize_control', array(
+            'label'          => __( 'Font size for Single Post', 'Carlozahar' ),
+            'section'        => 'carloz_single_post',
+            'settings'       => 'carl_post_fsize',
+            'type'           => 'number',
+            'input_attrs'    => array(
+                'min'        => 1,
+                'max'        => 99,
+            ),
+        )
+    )
+);	
+
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'carloz_slicknav_border_control', array(
 		'label' => __('Slicknav Border', 'Carlozahar'),
 		'section' => 'carloz_slicknav_colors',
 		'settings' => 'carl_slicknav_border',
+		)));
+
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'carloz_slicknav_text_color_control', array(
+		'label' => __('Slicknav Text Color', 'Carlozahar'),
+		'section' => 'carloz_slicknav_colors',
+		'settings' => 'carl_slicknav_text_color',
+		)));
+
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'carloz_post_bg_control', array(
+		'label' => __('Single Post Background Color', 'Carlozahar'),
+		'section' => 'carloz_single_post',
+		'settings' => 'carl_post_bg',
+		)));
+
+	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'carloz_post_color_control', array(
+		'label' => __('Single Post Text Color', 'Carlozahar'),
+		'section' => 'carloz_single_post',
+		'settings' => 'carl_post_color',
 		)));
 
 }
@@ -167,11 +242,30 @@ function carlozahar_customize_css() { ?>
 			border-top: 3px solid <?php echo get_theme_mod('carl_slicknav_border'); ?>;
 		}
 
-		body, .c-box, .slicknav .menu a, .slicknav .menu a:link, 
-		.slicknav .menu a:visited, .slicknav .menu a:hover,
+		nav.slicknav li.menu-item {
+			font-size: <?php echo get_theme_mod('carl_slicknav_text_size') . 'px'; ?>;
+		}
+
+		.slicknav .menu-item a, .slicknav .menu-item a:link, 
+		.slicknav .menu a:visited, .slicknav .menu a:hover {
+			color: <?php echo get_theme_mod('carl_slicknav_text_color'); ?>;
+		}
+
+		body, .c-box, 
 		.c-box .lore a, .c-box .lore a:link, .c-box .lore a:visited,
 		.c-box a, .c-box a:link, .c-box a:visited {
 			color: <?php echo get_theme_mod('carl_text_color'); ?>;
+		}
+
+		#post-main article#single-post.post {
+			background-color: <?php echo get_theme_mod('carl_post_bg'); ?>;
+			color : <?php echo get_theme_mod('carl_post_color'); ?> ;
+			font-size: <?php echo get_theme_mod('carl_post_fsize') . 'px'; ?>;
+		}
+
+		#post-main article#single-post.post p {
+			color : <?php echo get_theme_mod('carl_post_color'); ?> ;
+			font-size: <?php echo get_theme_mod('carl_post_fsize') . 'px'; ?>;
 		}
 
 

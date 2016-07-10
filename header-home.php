@@ -2,7 +2,8 @@
 <html lang="en-US" dir="ltr">
 <head>
 
-	<?php if ( current_user_can( 'manage_options' ) == false ) { header('Location: http://www.valucre.com'); } ?>
+	<!-- redirect while we work on site 
+	<?php if ( current_user_can( 'manage_options' ) == false ) { header('Location: http://www.valucre.com'); } ?> -->
 
 	<link rel='stylesheet' type='text/css' href='<?php bloginfo('template_url');?>/assets/css/ips.css'/>
 	<?php get_template_part('valucre-nav-head'); ?>

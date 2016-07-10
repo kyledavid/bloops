@@ -130,7 +130,6 @@ a, a:link, a:visited, a:active {
     min-height: 110px;
     /* FOR DEMO PURPOSES */ }
     .c-box .box-content h2 {
-      font-size: 1.2em;
       font-weight: bold;
       font-style: italic; }
   .c-box .lore, .c-box .r-content {
@@ -303,6 +302,15 @@ nav.slicknav ul.menu > li.menu-item:first-of-type {
   #post-main .post h2 {
     font-size: 36px;
     font-family: 'Trajan-Reg', serif; }
+
+.post-content h1, .box-content h1 {
+  font-size: 3em; }
+.post-content h2, .box-content h2 {
+  font-size: 2em; }
+.post-content h3, .box-content h3 {
+  font-size: 2.5em; }
+.post-content h4, .box-content h4 {
+  font-size: 1.8em; }
 
 @media (max-width: 1400px) {
   #vertical-slick {
