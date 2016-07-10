@@ -64,6 +64,11 @@ function carlozahar_customize_register( $wp_customize ) {
 		'transport' => 'refresh',
 		));
 
+	$wp_customize->add_setting('carl_site_fsize', array(
+		'default' => 17.6,
+		'transport' => 'refresh',
+		));
+
 	$wp_customize->add_setting('carl_slicknav_text_color', array(
 		'default' => '#eee',
 		'transport' => 'refresh',
@@ -183,6 +188,19 @@ function carlozahar_customize_register( $wp_customize ) {
     )
 );	
 
+$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'carloz_site_fsize_control', array(
+            'label'          => __( 'General Font size for Front Page', 'Carlozahar' ),
+            'section'        => 'carloz_bg_colors',
+            'settings'       => 'carl_site_fsize',
+            'type'           => 'number',
+            'input_attrs'    => array(
+                'min'        => 1,
+                'max'        => 99,
+            ),
+        )
+    )
+);	
+
 	$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'carloz_slicknav_border_control', array(
 		'label' => __('Slicknav Border', 'Carlozahar'),
 		'section' => 'carloz_slicknav_colors',
@@ -217,6 +235,10 @@ add_action('customize_register', 'carlozahar_customize_register');
 function carlozahar_customize_css() { ?>
 
 	<style type="text/css">
+
+		.c-box .box-content {
+			font-size: <?php echo get_theme_mod('carl_site_fsize') . 'px'; ?>;
+		}
 
 		div#page-container {
 			background-color: <?php echo get_theme_mod('carl_main_bg'); ?>;
