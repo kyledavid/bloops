@@ -1,5 +1,11 @@
 <?php
 
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
 function carlozaharStyleResources(){
 	wp_enqueue_script( 'slicknav-script', get_stylesheet_directory_uri() . '/assets/js/slicknav.js', array(), null, true );
 	wp_enqueue_script( 'ips-scripts', get_stylesheet_directory_uri() . '/assets/js/ips.js', array(), null, true );

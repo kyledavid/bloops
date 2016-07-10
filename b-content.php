@@ -3,17 +3,25 @@
 		<!-- post-thumbnail -->
 		
 
-		<h2>
+		
+		
+			<?php 
 
-			<?php if ( get_field('include_icon') ): ?>
+			$icon = get_field('include_icon');
 
-				<span class="fa fa-<?php the_field('include_icon'); ?>"> </span>
+			if ( get_field('include_icon') ): ?>
+
+				<img class="header-icon" src="<?php echo $icon['url']; ?>"/> 
 
 			<?php endif; ?>
 
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			
+			
+			<span class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span>
 
-		</h2>
+			
+
+		
 	</div><!-- box header -->
 
 	<div class="box-content">
