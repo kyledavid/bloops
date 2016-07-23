@@ -6,6 +6,19 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+add_filter('pre_get_posts', 'query_post_type');
+function query_post_type($query) {
+  if( is_category() ) {
+    $post_type = get_query_var('post_type');
+    if($post_type)
+        $post_type = $post_type;
+    else
+        $post_type = array('nav_menu_item', 'post', 'nav_post'); // don't forget nav_menu_item to allow menus to work!
+    $query->set('post_type',$post_type);
+    return $query;
+    }
+}
+
 function carlozaharStyleResources(){
 	wp_enqueue_script( 'slicknav-script', get_stylesheet_directory_uri() . '/assets/js/slicknav.js', array(), null, true );
 	wp_enqueue_script( 'ips-scripts', get_stylesheet_directory_uri() . '/assets/js/ips.js', array(), null, true );
@@ -325,7 +338,7 @@ function register_cpt_nav_post() {
         'hierarchical' => true,
         
         'supports' => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
-        'taxonomies' => array( 'navpost_categories' ),
+        'taxonomies' => array( 'category' ),
         'public' => true,
         'show_ui' => true,
         'show_in_menu' => true,

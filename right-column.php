@@ -1,11 +1,17 @@
 <?php 
 	
+	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
 	// WP_Query arguments
 	$args = array (
 		'post_type'              => array( 'navpost' ),
 		'order'                  => 'ASC',
 		'orderby'                => 'menu_order',
+		'posts_per_page'         => 4,
+		'paged'                  => $paged,
 	);
+
+
 
 	// The Query
 	$nav_posts = new WP_Query( $args );
@@ -22,6 +28,18 @@
 
 				<article class="c-box">
 					<div class="box-header">
+
+						<?php 
+
+						$icon = get_field('include_icon');
+
+						if ( get_field('include_icon') ): ?>
+
+							<img class="header-icon" src="<?php echo $icon['url']; ?>"/> 
+
+						<?php endif; ?>
+
+
 						<a href="<?php the_permalink(); ?>"><?php echo ' ' . the_title(); ?></a>
 					</div><!-- box header -->
 
@@ -36,6 +54,9 @@
 			<?php endif; ?>
 
 		<?php }
+
+		 the_posts_pagination($args); 
+
 	} else {
 		// no posts found
 	}
