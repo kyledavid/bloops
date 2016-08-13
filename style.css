@@ -319,6 +319,11 @@ nav.slicknav ul.menu > li.menu-item:first-of-type {
 .post-content h4, .box-content h4 {
   font-size: 1.8em; }
 
+.archive-wrappa {
+  float: left;
+  width: 70%;
+  margin-left: 1%; }
+
 @media (max-width: 1400px) {
   #vertical-slick {
     display: block; }

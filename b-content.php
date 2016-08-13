@@ -50,7 +50,7 @@
 			</p>
 
 
-		<?php if ( is_search() OR is_archive() ) { ?>
+		<?php if ( is_search() && is_archive() ) { ?>
 			<p>
 			<?php echo get_the_excerpt(); ?>
 			<a href="<?php the_permalink(); ?>">Read more&raquo;</a>

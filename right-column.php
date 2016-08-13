@@ -1,6 +1,6 @@
 <?php 
 	
-	$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
 
 	// WP_Query arguments
 	$args = array (
@@ -8,7 +8,6 @@
 		'order'                  => 'ASC',
 		'orderby'                => 'menu_order',
 		'posts_per_page'         => 4,
-		'paged'                  => $paged,
 	);
 
 
@@ -55,7 +54,7 @@
 
 		<?php }
 
-		 the_posts_pagination($args); 
+		 
 
 	} else {
 		// no posts found

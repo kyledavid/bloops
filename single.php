@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-	<div id="slick-column">
-		
+	<div id="slick-column">	
 		<div class='slick-wrap'>
 			<nav class='slicknav'>
 				<?php $args = array(

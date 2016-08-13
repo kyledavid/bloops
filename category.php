@@ -1,13 +1,43 @@
-<?php get_header('home'); 
+<?php get_header(); ?>
 
 
+<div id="slick-column">
+	
+	<div class='slick-wrap'>
+		<nav class='slicknav'>
+			<?php $args = array(
+			'theme_location' => 'primary'
+		);
+		?>
 
-	while (have_posts()) : the_post();
+		<?php wp_nav_menu( $args ); ?>
+		</nav>
+	</div>
+</div>
 
-		echo the_content();
 
-	endwhile; ?>
+<div class="archive-wrappa">
 
+	<?php
+	if (have_posts()) :
+		while (have_posts()) : the_post();
+
+		if (get_post_format() == false) {
+			get_template_part('b-content');
+		} else {
+			get_template_part('content', get_post_format());
+		}
+
+
+		endwhile;
+
+		else :
+			echo '<p>No content found</p>';
+
+		endif;
+
+	?>
+</div>
 
 
 <?php get_footer();  ?>

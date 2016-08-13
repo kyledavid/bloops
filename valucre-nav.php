@@ -80,7 +80,7 @@
 							
 
 
-<a href="http://www.valucre.com/" id="elSiteTitle" accesskey="1" class="logo textLogo">
+<a href="http://www.valucre.com/index.php" id="elSiteTitle" accesskey="1" class="logo textLogo">
   
 	
 	
@@ -110,7 +110,7 @@
 		<li class="ipsNavBar_active" data-active="" id="elNavSecondary_1" data-role="navBarItem" data-navapp="core" data-navext="CustomItem" data-navtitle="Browse">
 			
 			
-				<a href="http://www.valucre.com/" data-navitem-id="1" data-navdefault="" data-hover="">
+				<a href="http://www.valucre.com/index.php" data-navitem-id="1" data-navdefault="" data-hover="">
 					Browse <i class="fa fa-caret-down"></i>
 				</a>
 			
@@ -126,7 +126,7 @@
 		<li class="ipsNavBar_active" data-active="" id="elNavSecondary_3" data-role="navBarItem" data-navapp="forums" data-navext="Forums" data-navtitle="Forums">
 			
 			
-				<a href="http://www.valucre.com/" data-navitem-id="3" data-navdefault="">
+				<a href="http://www.valucre.com/index.php" data-navitem-id="3" data-navdefault="">
 					Forums
 				</a>
 			
@@ -486,7 +486,7 @@
 
 	<ul id="elUserNav" class="ipsList_inline cSignedOut ipsClearfix ipsResponsive_showDesktop">
 		<li id="elSignInLink">
-			<a href="https://www.valucre.com/">
+			<a href="http://www.valucre.com/index.php">
 				Forum</i>
 			</a>
 			

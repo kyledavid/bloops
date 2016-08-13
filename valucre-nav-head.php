@@ -24,7 +24,7 @@
 
 	
 		
-			<meta property="og:url" content="http://www.valucre.com/">
+			<meta property="og:url" content="http://www.valucre.com/index.php">
 		
 	
 
@@ -53,7 +53,7 @@
 	
 
 <meta name="theme-color" content="#55728b">
-<link rel="canonical" href="http://www.valucre.com/">
+<link rel="canonical" href="http://www.valucre.com/index.php">
 
 
 		

@@ -1,22 +1,25 @@
-jQuery(document).ready(function(e) {
-    var i = !1;
-    e(".slick-head").click(function(i) {
-        var n = e(this).hasClass("verti");
-        if (n) {
-            var t = e(this).siblings(".menu-main-menu-container");
-            t.animate({
-                height: "toggle"
-            }, 500)
+jQuery(document).ready(function($) {
+    var toggled = false;
+    var allowLink = false;
+    $('.menu-item').click(function(event){
+        if (allowLink === false) {
+            var children = $(this).children('ul.sub-menu');
+            if (children.length > 0) {
+                console.log(children.length);
+                if (toggled){
+                    toggled = false;
+                } else {
+                    var parents = $(this).parents('li.menu-item');
+                    children.slideToggle();
+                    event.preventDefault();
+                    if (parents.length) {
+                        toggled = true;
+                    }
+                }
+            } else {
+                allowLink = true;
+            }
         }
-    }), e(".menu-item").click(function(n) {
-        if (i === !0) i = !1;
-        else {
-            var t = e(this).children(".sub-menu");
-            t.length ? (n.preventDefault(), "none" === t.css("display") ? t.animate({
-                height: "toggle"
-            }, 500) : t.animate({
-                height: "toggle"
-            }, 500)) : i = !0
-        }
-    })
+        
+    });
 });
