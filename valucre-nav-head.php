@@ -57,25 +57,6 @@
 
 
 		
-<!--
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/341e4a57816af3ba440d891ca87450ff_framework.css.ce178fcacb900b976c118b70659dd7c6.css" media="all">
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/05e81b71abe4f22d6eb8d1a929494829_responsive.css.17e7a1bd2f682b1bc0e8e8f2db2a036d.css" media="all">
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/90eb5adf50a8c640f633d47fd7eb1778_core.css.81c79298e5b2671fa412cb664984ab99.css" media="all">
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/5a0da001ccc2200dc5625c3f3934497d_core_responsive.css.149e4e7e73e903679c45778b2e127614.css" media="all">
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/62e269ced0fdab7e30e026f1d30ae516_forums.css.731eca2159e00d09b6e752e6337cefd9.css" media="all">
-
-	<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/76e62c573090645fb99a15a363d8620e_forums_responsive.css.a1949271bd7971e838506e87dda2a899.css" media="all">
-
-
-
-
-<link rel="stylesheet" href="<?php bloginfo('template_url');?>/Fantasy roleplay forum  cutout_files/258adbb6e4f3e83cd3b355f84e3fa002_custom.css.f740dca097c5c584fc7a9f1df82f98c0.css" media="all">
-
--->
 
 
 		
