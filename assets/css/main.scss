@@ -3,7 +3,7 @@ Theme Name: Valucre
 Author: Kyle Steinle
 Author URI: http://www.knwebwork.com
 Description: A forum roleplay theme
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -69,7 +69,13 @@ a, a:link, a:visited, a:active{
 	text-decoration: none;
 }
 
+strong {
+	font-weight: bold;
+}
 
+ol {
+	list-style: upper-roman;
+}
 
 
 .hidden{

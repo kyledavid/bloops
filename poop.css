@@ -3,7 +3,7 @@ Theme Name: Valucre
 Author: Kyle Steinle
 Author URI: http://www.knwebwork.com
 Description: A forum roleplay theme
-Version: 1.1
+Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -43,12 +43,6 @@ ol, ul {
 
 a, a:link, a:visited, a:active {
   text-decoration: none; }
-
-strong {
-  font-weight: bold; }
-
-ol {
-  list-style: upper-roman; }
 
 .hidden {
   display: none; }
@@ -204,17 +198,18 @@ img.header-icon {
     font-family: 'Trajan-Reg', serif; }
 
 #vertical-slick {
-  position: relative;
-  top: -34px;
+  position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 20;
   display: none; }
   #vertical-slick .slicknav {
     margin-top: 0;
     padding-top: 0; }
   #vertical-slick .menu-main-menu-container {
-    z-index: 1; }
+    display: none;
+    z-index: 20; }
 
 .slicknav {
   margin-top: 18px;
@@ -382,4 +377,4 @@ div.nav-links {
 /*@import 'blog';
 @import 'single';*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=poop.css.map */
