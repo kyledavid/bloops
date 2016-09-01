@@ -25,6 +25,10 @@
 			
 
 			<?php get_template_part('first-center-box'); ?>
+			<?php get_template_part('center-box-2'); ?>
+			<?php get_template_part('center-box-3'); ?>
+			<?php get_template_part('center-box-4'); ?>
+			<?php get_template_part('center-box-5'); ?>
 
 
 
