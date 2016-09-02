@@ -1,12 +1,14 @@
 <?php 
-	$post_22 = get_post(22); 
-	$content = $post_22->post_content;
+	$ID = 20;
+	$post = get_post( $ID ); 
+	$content = $post->post_content;
 	$content = apply_filters('the_content', $content);
 	$content = str_replace(']]>', ']]&gt;', $content);
-	$title = get_the_title(22);
+	$title = get_the_title( $ID );
+	$status = get_post_status( $ID );
 
 
-	if ($content):
+	if ($status != 'pending'):
 ?>
 		<article class="c-box">
 			<div class="box-header">

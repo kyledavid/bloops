@@ -64,6 +64,9 @@ ol {
 .clearfix {
   *zoom: 1; }
 
+p.post-info {
+  padding-bottom: 20px; }
+
 #right-boxes {
   display: none; }
 
