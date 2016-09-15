@@ -50,7 +50,13 @@
 			
 <ul id="elMobileNav" class="ipsList_inline ipsResponsive_hideDesktop ipsResponsive_block" data-controller="core.front.core.mobileNav">
 	
-    
+    <li>
+    	<a href="http://www.valucre.com/index.php" class="ipsType_light forum-link">Forum</a>
+    </li>
+
+    <li>
+    	<a href="http://www.valucre.com/register/" class="ipsType_light"><i class="fa fa-user-plus"></i></a>
+    </li>
 	
 	<li>
 		<a data-action="defaultStream" class="ipsType_light" href="http://www.valucre.com/discover/"><i class="fa fa-newspaper-o"></i></a>
@@ -639,7 +645,7 @@
 		
 		
 <div id="elMobileDrawer" class="ipsDrawer ipsHide">
-	<a href="http://www.valucre.com/#" class="ipsDrawer_close" data-action="close"><span>×</span></a>
+	<a href="#" class="ipsDrawer_close" data-action="close"><span>×</span></a>
 	<div class="ipsDrawer_menu">
 		<div class="ipsDrawer_content">
 			

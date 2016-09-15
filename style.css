@@ -126,7 +126,7 @@ p.post-info {
     /* FOR DEMO PURPOSES */
     min-height: 25px;
     /* FOR DEMO PURPOSES */
-    background: url("http://www.valucre.com/uploads/set_resources_7/005d20f304c7929cbfdb3fe61d088022_mainPattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
+    background: url("http://valucre.com/roleplay/wp-content/uploads/2016/09/nav-pattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
     .c-box .box-header .title, .c-box .box-header h2 {
       font-size: 2em;
       line-height: 45px;
@@ -206,6 +206,10 @@ img.header-icon {
     /* FOR DEMO PURPOSES */
     font-family: 'Trajan-Reg', serif; }
 
+.forum-link {
+  width: initial !important;
+  font-family: 'Trajan-Reg', Serif; }
+
 #vertical-slick {
   position: relative;
   top: -34px;
@@ -264,7 +268,7 @@ nav.slicknav ul.menu > li.menu-item:first-of-type {
   /* FOR DEMO PURPOSES */
   min-height: 25px;
   /* FOR DEMO PURPOSES */
-  background: url("http://www.valucre.com/uploads/set_resources_7/005d20f304c7929cbfdb3fe61d088022_mainPattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
+  background: url("http://valucre.com/roleplay/wp-content/uploads/2016/09/nav-pattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
   nav.slicknav ul.menu > li.menu-item:first-of-type h2 {
     font-size: 2em; }
 
