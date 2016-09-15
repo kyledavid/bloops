@@ -32,8 +32,6 @@ function carlozaharStyleResources(){
 //Theme setup
 function carlozaharSetup(){
 
-	show_admin_bar(false);
-
 	// Navigation Menus
 	register_nav_menus(array(
 		'primary' => __( 'Primary Menu'),
