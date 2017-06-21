@@ -1,0 +1,883 @@
+/*
+
+Theme Name: Valucre
+
+Author: Kyle Steinle
+
+Author URI: http://www.knwebwork.com
+
+Description: A forum roleplay theme
+
+Version: 1.1
+
+License: GNU General Public License v2 or later
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+/***************FONTS****************/
+
+@font-face {
+
+  font-family: 'Trajan-Reg';
+
+  src: url("assets/fonts/TrajanProRegular.ttf"); }
+
+/***************VARIABLES************/
+
+/***************MIXINS***************/
+
+/**************GLOBAL***************/
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  outline: 0;
+
+  font-weight: inherit;
+
+  font-style: inherit;
+
+  font-size: 100%;
+
+  font-family: inherit;
+
+  vertical-align: baseline; }
+
+
+
+body {
+
+  line-height: 1;
+
+  color: #fff;
+
+  background: white;
+
+  font-family: sans-serif; }
+
+
+
+ol, ul {
+
+  list-style: none; }
+
+
+
+a, a:link, a:visited, a:active {
+
+  text-decoration: none; }
+
+
+
+strong {
+
+  font-weight: bold; }
+
+
+
+ol {
+
+  list-style: upper-roman; }
+
+
+
+.hidden {
+
+  display: none; }
+
+
+
+/****Clearfix****/
+
+.clearfix:before, .clearfix:after {
+
+  content: "";
+
+  display: table; }
+
+
+
+.clearfix:after {
+
+  clear: both; }
+
+
+
+.clearfix {
+
+  *zoom: 1; }
+
+
+
+p.post-info {
+
+  padding-bottom: 20px; }
+
+
+
+#right-boxes {
+
+  display: none; }
+
+
+
+#page-container {
+
+  background-color: #3d6a99;
+
+  /* FOR DEMO PURPOSES */
+
+  padding: 5px 0;
+
+  position: relative; }
+
+
+
+#front-main {
+
+  background-color: #2b568a;
+
+  /* FOR DEMO PURPOSES */
+
+  width: 97%;
+
+  margin: 0 auto;
+
+  padding: 5px;
+
+  border-radius: 5px;
+
+  padding-bottom: 10px; }
+
+
+
+#f-left-col, #f-right-col,
+
+#f-center-col {
+
+  min-height: 95vh;
+
+  /* FOR DEMO PURPOSES */
+
+  float: left;
+
+  text-align: center;
+
+  /* FOR DEMO PURPOSES */
+
+  margin-right: 1%; }
+
+
+
+#f-left-col, #f-right-col {
+
+  width: 16.5%; }
+
+
+
+#f-left-col {
+
+  margin-left: 1%; }
+
+
+
+#f-center-col {
+
+  width: 63%; }
+
+
+
+#f-right-col {
+
+  margin-right: 0; }
+
+
+
+.c-box {
+
+  min-height: 100px;
+
+  /* FOR DEMO PURPOSES */
+
+  color: #eee;
+
+  /* FOR DEMO PURPOSES */
+
+  margin-top: 17px;
+
+  border: 2px solid #1f4068;
+
+  border-radius: 5px;
+
+  overflow: hidden; }
+
+  .c-box a, .c-box a:link, .c-box a:visited {
+
+    color: #eee; }
+
+  .c-box a:hover {
+
+    color: rgba(255, 255, 255, 0.8); }
+
+  .c-box .box-header {
+
+    font-family: 'Trajan-Reg', serif;
+
+    padding: 10px 10px;
+
+    background-color: #1f4068;
+
+    /* FOR DEMO PURPOSES */
+
+    min-height: 25px;
+
+    /* FOR DEMO PURPOSES */
+
+    background: url("http://valucre.com/roleplay/wp-content/uploads/2016/09/nav-pattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
+
+    .c-box .box-header .title, .c-box .box-header h2 {
+
+      font-size: 2em;
+
+      line-height: 45px;
+
+      vertical-align: middle; }
+
+  .c-box .box-content {
+
+    position: relative;
+
+    background-color: #3d6a99;
+
+    /* FOR DEMO PURPOSES */
+
+    padding: 25px 55px;
+
+    text-align: left;
+
+    font-size: 17.6px;
+
+    min-height: 110px;
+
+    /* FOR DEMO PURPOSES */ }
+
+    .c-box .box-content h2 {
+
+      font-weight: bold;
+
+      font-style: italic; }
+
+  .c-box .lore, .c-box .r-content {
+
+    padding: 8px;
+
+    text-align: center; }
+
+    .c-box .lore a, .c-box .lore a:link, .c-box .lore a:visited, .c-box .r-content a, .c-box .r-content a:link, .c-box .r-content a:visited {
+
+      color: #fff; }
+
+    .c-box .lore p, .c-box .r-content p {
+
+      font-size: .9em; }
+
+    .c-box .lore img, .c-box .r-content img {
+
+      width: 90%; }
+
+  .c-box .dif-height1 {
+
+    /* FOR DEMO PURPOSES */
+
+    min-height: 150px; }
+
+  .c-box .dif-height2 {
+
+    /* FOR DEMO PURPOSES */
+
+    min-height: 210px; }
+
+
+
+#front-banner {
+
+  margin-top: 15px;
+
+  text-align: center; }
+
+  #front-banner img {
+
+    width: 50%;
+
+    display: inline-block;
+
+    height: 175px; }
+
+
+
+img.header-icon {
+
+  width: 45px;
+
+  height: 45px;
+
+  vertical-align: middle; }
+
+
+
+#front-header {
+
+  min-height: 20vh;
+
+  /* FOR DEMO PURPOSES */
+
+  background-color: #2b568a;
+
+  /* FOR DEMO PURPOSES */
+
+  text-align: center;
+
+  /* FOR DEMO PURPOSES */
+
+  padding-bottom: 20px; }
+
+
+
+#header {
+
+  background-color: #55728b; }
+
+
+
+#front-nav, #site-banner {
+
+  width: 80%;
+
+  margin: 0 auto; }
+
+
+
+#front-nav {
+
+  min-height: 5vh;
+
+  /* FOR DEMO PURPOSES */
+
+  background-color: #1f4068;
+
+  /* FOR DEMO PURPOSES */ }
+
+
+
+#site-banner {
+
+  min-height: 35vh;
+
+  /* FOR DEMO PURPOSES */
+
+  background-color: #3d6a99;
+
+  /* FOR DEMO PURPOSES */ }
+
+  #site-banner #site-header {
+
+    font-size: 60px;
+
+    /* FOR DEMO PURPOSES */
+
+    padding-top: 50px;
+
+    /* FOR DEMO PURPOSES */
+
+    font-family: 'Trajan-Reg', serif; }
+
+
+
+#elMobileNav li:not( #elMobileBreadcrumb ) a.forum-link {
+
+  width: initial !important;
+
+  font-family: 'Trajan-Reg', Serif; 
+
+  font-size: 24px;}
+
+#elMobileNav li:not( #elMobileBreadcrumb ) a.reg-link {
+  line-height: 48px;
+}
+
+#vertical-slick {
+
+  position: relative;
+
+  top: -34px;
+
+  left: 0;
+
+  right: 0;
+
+  z-index: 1;
+
+  display: none; }
+
+  #vertical-slick .slicknav {
+
+    margin-top: 0;
+
+    padding-top: 0; }
+
+  #vertical-slick .menu-main-menu-container {
+
+    z-index: 1; }
+
+
+#posts-divider {
+  margin-top: 10px;
+  display: none;
+  clear: both;
+  position: relative;
+  text-align: center;
+  margin-right: 15px;
+}
+
+#posts-divider:after {
+  font-family: FontAwesome;
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  padding: 0 3px;
+  content: "\f132";
+  background-color: #2b568a;
+}
+.slicknav {
+
+  margin-top: 18px;
+
+  text-align: left; }
+
+  .slicknav .slick-head, .slicknav li {
+
+    width: 100%;
+
+    background-color: #1f4068;
+
+    font-size: 22px;
+
+    border: 1px solid black;
+
+    padding: 5px 0px 5px 15px; }
+
+  .slicknav .menu {
+
+    z-index: 1; }
+
+    .slicknav .menu a, .slicknav .menu a:link, .slicknav .menu a:visited, .slicknav .menu a:hover {
+
+      color: #fff;
+
+      text-decoration: none; }
+
+    .slicknav .menu a:hover {
+
+      color: #ccc;
+
+      transition: all .5s; }
+
+  .slicknav .menu-item {
+
+    float: left; }
+
+  .slicknav .sub-menu {
+
+    overflow: hidden;
+
+    display: none;
+
+    position: relative;
+
+    z-index: 5; }
+
+    .slicknav .sub-menu .menu-item {
+
+      border-bottom: 0;
+
+      border-left: 0;
+
+      border-right: 0; }
+
+    .slicknav .sub-menu .menu-item:first-of-type {
+
+      margin-top: 5px;
+
+      border-top: 3px solid #000; }
+
+    .slicknav .sub-menu .menu-item:last-of-type {
+
+      padding-bottom: 0px; }
+
+
+
+nav.slicknav ul.menu > li.menu-item:first-of-type {
+
+  font-family: 'Trajan-Reg', serif;
+
+  border-top-left-radius: 5px;
+
+  border-top-right-radius: 5px;
+
+  pointer-events: none;
+
+  cursor: default;
+
+  padding: 10px 10px;
+
+  background-color: #1f4068;
+
+  /* FOR DEMO PURPOSES */
+
+  min-height: 25px;
+
+  /* FOR DEMO PURPOSES */
+
+  background: url("http://valucre.com/roleplay/wp-content/uploads/2016/09/nav-pattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
+
+  nav.slicknav ul.menu > li.menu-item:first-of-type h2 {
+
+    font-size: 2em; }
+
+
+
+.focus_footer {
+
+  font-size: 12px !important;
+
+  font-family: Tahoma, sans-serif; }
+
+  .focus_footer a, .focus_footer a:link, .focus_footer a:visited, .focus_footer a:hover, .focus_footer a:active, .focus_footer span {
+
+    font-size: 12px !important; }
+
+  .focus_footer h4 {
+
+    font-size: 13px;
+
+    font-weight: bold; }
+
+
+
+#post-main #slick-column {
+
+  width: 19%;
+
+  float: left;
+
+  margin: 0 15px; }
+
+#post-main #single-post {
+
+  width: 71%;
+
+  float: left;
+
+  margin: 0; }
+
+#post-main .post-info {
+
+  font-size: 12px;
+
+  margin: 10px 0; }
+
+#post-main .post-thumbnail {
+
+  text-align: center; }
+
+  #post-main .post-thumbnail img {
+
+    max-width: 100%; }
+
+#post-main .post-content {
+
+  margin-top: 10px; }
+
+#post-main .post {
+
+  margin: 10px 15%;
+
+  background-color: #fff;
+
+  padding: 20px;
+
+  padding-bottom: 40px;
+
+  color: #666666;
+
+  border-radius: 10px;
+
+  font-family: Tahoma, sans-serif;
+
+  font-size: 13px; }
+
+  #post-main .post .by-line {
+
+    font-size: 16px;
+
+    font-family: Tahoma, sans-serif; }
+
+  #post-main .post p {
+
+    font-size: 13px;
+
+    font-family: Tahoma, sans-serif; }
+
+  #post-main .post .post-title {
+
+    font-size: 22px;
+
+    font-family: Tahoma, sans-serif;
+
+    padding: 12px 0;
+
+    color: #fff; }
+
+  #post-main .post h2 {
+
+    font-size: 36px;
+
+    font-family: 'Trajan-Reg', serif; }
+
+
+
+.post-content h1, .box-content h1 {
+
+  font-size: 3em; }
+
+.post-content h2, .box-content h2 {
+
+  font-size: 2em; }
+
+.post-content h3, .box-content h3 {
+
+  font-size: 2.5em; }
+
+.post-content h4, .box-content h4 {
+
+  font-size: 1.8em; }
+
+
+
+.archive-wrappa {
+
+  float: left;
+
+  width: 70%;
+
+  margin-left: 1%; }
+
+
+
+@media (max-width: 1400px) {
+
+  #vertical-slick {
+
+    display: block; }
+
+
+
+  #slick-column {
+
+    display: none; }
+
+
+
+  #post-main #single-post {
+    clear: both;
+
+    float: none;
+
+    width: 97%;
+
+    margin: 15px auto; }
+
+
+
+  #page-container {
+
+    padding-top: 34px; }
+
+
+
+  #f-left-col {
+
+    display: none; }
+
+
+
+  #f-center-col {
+
+    width: 70%; }
+
+
+
+  #f-right-col {
+
+    width: 29%; } }
+
+@media (max-width: 1200px) {
+
+  #posts-divider {
+    display:block;
+  }
+
+  #right-boxes {
+
+    display: block; }
+
+  #f-left-col {
+
+    display: none; }
+
+  #f-center-col {
+    margin-bottom: 20px;
+    min-height: initial;
+  }
+
+  #f-center-col, #f-right-col {
+
+    width: 98%; } 
+
+#elSearch.cSearchExpanded {
+
+  width: 240px; }
+
+
+
+#elSearchFilter {
+
+  display: none !important; }
+
+
+
+h2.screen-reader-text {
+
+  display: none; }
+
+
+
+div.nav-links {
+
+  font-family: sans-serif;
+
+  margin-top: 10px;
+
+  font-size: 17px; }
+
+  div.nav-links a, div.nav-links a:link, div.nav-links a:visited, div.nav-links a:active {
+
+    color: #fff; }
+
+  div.nav-links a:hover {
+
+    color: rgba(255, 255, 255, 0.7); } }
+
+
+
+#header {
+
+	background: url("http://valucre.com/roleplay/wp-content/uploads/2016/09/nav-pattern.png") repeat 50% 100%, linear-gradient(to bottom, rgba(20, 60, 105, 0.5) 0%, #143c64 100%); }
+
+
+/*******************UPDATES VOL 1**********************
+=======================================================
+******************************************************/
+
+a.logo {
+  height: initial;
+}
+a.logo .logoSlogan {
+  display: initial;
+}
+
+#elSearchField {
+  font-size: 13px !important;
+  font-family: 'Tahoma', sans-serif;
+}
+
+#page-container {
+  min-height: 100vh;
+}
+
+#elUserNav, #elSearchWrap {
+  float: right;
+}
+
+.navAlign {
+  display: none;
+}
+
+#elSearch {
+  margin-top: 5px;
+}
+
+#elSearch, #elSearch input[type="search"] {
+  height: 32px;
+}
+
+/* IPS Breakpoint */
+@media (max-width: 969px) {
+  #front-banner img {
+    height: 130px;
+  }
+  a.logo {
+    height: 38px;
+  }
+}
+
+@media (max-width: 780px) {
+  .c-box .box-header .title, .c-box .box-header h2 {
+    font-size: 1.8em;
+  }
+
+  #single-post {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 680px) {
+  .c-box .box-header .title, .c-box .box-header h2 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 580px) {
+  .c-box .box-header .title, .c-box .box-header h2 {
+    font-size: 1.4em;
+  }
+}
+/*@import 'blog';
+
+@import 'single';*/
+
+
+
+/*# sourceMappingURL=style.css.map */
+

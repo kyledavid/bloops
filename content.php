@@ -25,26 +25,30 @@
 
 			</p>
 
+			<div class="post-body">
 
-			<?php if ( is_search() OR is_archive() ) { ?>
-				<p>
-				<?php echo get_the_excerpt(); ?>
-				<a href="<?php the_permalink(); ?>">Read more&raquo;</a>
-				</p>
-			<?php } else {
-				if ($post->post_excerpt) { ?>
 
+				<?php if ( is_search() OR is_archive() ) { ?>
 					<p>
 					<?php echo get_the_excerpt(); ?>
 					<a href="<?php the_permalink(); ?>">Read more&raquo;</a>
 					</p>
-
 				<?php } else {
+					if ($post->post_excerpt) { ?>
 
-					the_content();
+						<p>
+						<?php echo get_the_excerpt(); ?>
+						<a href="<?php the_permalink(); ?>">Read more&raquo;</a>
+						</p>
 
-				}
-			} ?>
+					<?php } else {
+
+						the_content();
+
+					}
+				} ?>
+			</div>
+			<!--//post-body-->
 		</div>
 
 	</article>
